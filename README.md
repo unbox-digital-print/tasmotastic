@@ -15,9 +15,10 @@ Die Website enthält:
 
 Die Datenschutzerklärung ist unter folgendem Pfad verfügbar:
 
-[[Datenschutzerklärung]](https://github.com/robson80/tasmotastic/blob/main/privacy.html)
+- Online: [https://unbox-digital-printing.github.io/tasmotastic/privacy.html](https://unbox-digital-printing.github.io/tasmotastic/privacy.html)
+- Im Repository: [privacy.html](privacy.html)
 
 ## Hinweis
 
-Dieses Repository enthält ausschließlich die statischen Dateien der öffentlichen Website.  
+Dieses Repository enthält ausschließlich die statischen Dateien der öffentlichen Website.
 Der Quellcode der TasmoTastic-Android-App ist nicht Bestandteil dieses Repositories.
