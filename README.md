@@ -15,7 +15,7 @@ Die Website enthält:
 
 Die Datenschutzerklärung ist unter folgendem Pfad verfügbar:
 
-[[Datenschutzerklärung]](https://unbox-digital-printing.github.io/tasmotastic/privacy.html)
+[[Datenschutzerklärung]](https://unbox-digital-print.github.io/tasmotastic/privacy.html)
 
 ## Hinweis
 
