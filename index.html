@@ -3,149 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TasmoTastic – übersichtliche Steuerung und Verwaltung von Tasmota-Geräten im lokalen Netzwerk.">
-  <title>TasmoTastic</title>
-  <style>
-    :root {
-      --blue: #3498db;
-      --dark: #121212;
-      --card: #ffffff;
-      --text: #1f2933;
-      --muted: #61707c;
-      --line: #dce5ea;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Arial, sans-serif;
-      color: var(--text);
-      background: #f5f8fa;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1c8fd0, #3498db);
-      color: white;
-      padding: 72px 24px 64px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2.25rem, 7vw, 3.6rem);
-      letter-spacing: -0.04em;
-    }
-
-    header p {
-      max-width: 620px;
-      margin: 16px auto 0;
-      font-size: 1.15rem;
-      opacity: 0.95;
-    }
-
-    main {
-      max-width: 860px;
-      margin: -28px auto 0;
-      padding: 0 20px 48px;
-    }
-
-    section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 20px;
-      box-shadow: 0 8px 24px rgba(30, 60, 80, 0.06);
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      color: #176f9f;
-      font-size: 1.35rem;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      margin: 12px 0 0;
-      padding-left: 22px;
-    }
-
-    a {
-      color: #147daf;
-      font-weight: 650;
-      text-decoration-thickness: 1.5px;
-      text-underline-offset: 3px;
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 20px 40px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>TasmoTastic · Tasmota für Android</title>
+  <meta name="description" content="TasmoTastic für Android: Tasmota-Geräte im lokalen Netzwerk finden, gruppieren und steuern. Mit Widgets, Messwerten und Konfigurationssicherung.">
+  <meta name="theme-color" content="#eef4ff">
+  <meta property="og:title" content="TasmoTastic">
+  <meta property="og:description" content="TasmoTastic für Android: Tasmota-Geräte im lokalen Netzwerk finden, gruppieren und steuern. Mit Widgets, Messwerten und Konfigurationssicherung.">
+  <meta property="og:image" content="https://unbox-digital-print.github.io/tasmotastic/assets/icon.png">
+  <link rel="canonical" href="https://unbox-digital-print.github.io/tasmotastic/">
+  <link rel="alternate" hreflang="de" href="https://unbox-digital-print.github.io/tasmotastic/">
+  <link rel="alternate" hreflang="en" href="https://unbox-digital-print.github.io/tasmotastic/en/">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css?v=1">
 </head>
-
 <body>
+  <a class="skip" href="#main">Zum Inhalt</a>
   <header>
-    <h1>TasmoTastic</h1>
-    <p>Die übersichtliche App zur Verwaltung und Steuerung deiner Tasmota-Geräte im lokalen Netzwerk.</p>
+    <nav class="wrap nav" aria-label="Hauptnavigation">
+      <a class="brand" href="index.html"><img src="assets/icon.png" width="38" height="38" alt="">TasmoTastic</a>
+      <div class="nav-links"><a href="#features">Funktionen</a><a href="#widgets">Widgets</a></div>
+      <div class="nav-actions">
+        <a class="button small" href="https://play.google.com/store/apps/details?id=com.unbox_digital_print.tasmotastic&amp;hl=de">Google Play</a>
+        <div class="lang"><a href="index.html" hreflang="de" lang="de" aria-label="Deutsch" aria-current="page">DE</a>
+        <a href="en/index.html" hreflang="en" lang="en" aria-label="English">EN</a></div>
+      </div>
+    </nav>
   </header>
-
-  <main>
-    <section>
-      <h2>Über die App</h2>
-      <p>
-        TasmoTastic hilft dir dabei, kompatible Tasmota-Geräte im lokalen Netzwerk
-        zu finden, übersichtlich zu organisieren und schnell zu steuern.
-      </p>
-      <ul>
-        <li>Geräte im lokalen Netzwerk suchen und hinzufügen</li>
-        <li>Geräte individuell benennen und organisieren</li>
-        <li>Geräte zu Gruppen zusammenfassen</li>
-        <li>Schaltzustände und – je nach Gerät – Statusdaten anzeigen</li>
-        <li>Optionale Pro-Funktionen als Einmalkauf über Google Play</li>
-      </ul>
+  <main id="main">
+    <div class="hero-zone">
+      <section class="wrap hero" aria-labelledby="headline">
+        <div>
+          <p class="eyebrow">Tasmota-Steuerung für Android</p>
+          <h1 id="headline">Dein Zuhause.<br><em>Ein Schalter weiter.</em></h1>
+          <p class="lead">Finde, organisiere und schalte deine Tasmota-Geräte direkt im lokalen Netzwerk. Mit TasmoTastic hast du Geräte, Gruppen und Messwerte im Blick.</p>
+          <div class="actions"><a class="button" href="https://play.google.com/store/apps/details?id=com.unbox_digital_print.tasmotastic&amp;hl=de">Bei Google Play</a>
+          <a class="secondary" href="#features">Funktionen</a></div>
+          <p class="hero-facts">Android · Lokale Steuerung · Helles und dunkles Theme</p>
+        </div>
+        <figure class="hero-art">
+          <div class="phones">
+            <div class="phone front"><img src="assets/de-00.webp" width="900" height="1751" alt="TasmoTastic-Geräteliste mit Gruppen und Schaltzuständen"></div>
+            <div class="phone back"><img src="assets/de-02.webp" width="900" height="1740" alt="Gerätedetails mit Messwerten einer Kaffeemaschine"></div>
+          </div>
+        </figure>
+      </section>
+    </div>
+    <section class="wrap section" id="features" aria-labelledby="feature-title">
+      <h2 id="feature-title">Alles Wichtige im Blick.</h2>
+      <div class="features"><article class="feature"><p class="feature-mark">Geräte &amp; Gruppen</p><h3>Schalten mit Übersicht</h3><p>Geräte im Netzwerk finden, benennen, sortieren und zu Gruppen zusammenfassen. Schalte ein einzelnes Gerät oder eine ganze Gruppe.</p></article>
+<article class="feature"><p class="feature-mark">Status &amp; Verbrauch</p><h3>Wissen, was läuft</h3><p>Sieh, ob ein Gerät erreichbar und eingeschaltet ist. Unterstützte Geräte liefern zusätzlich Messwerte wie Leistung und Energieverbrauch.</p></article>
+<article class="feature"><p class="feature-mark">Schaltschutz</p><h3>Vor dem Schalten nachfragen</h3><p>Aktiviere für ausgewählte Geräte eine Bestätigung, damit sie sich nicht versehentlich ein- oder ausschalten lassen.</p></article></div>
     </section>
-
-    <section>
-      <h2>Datenschutz</h2>
-      <p>
-        Informationen zur Verarbeitung personenbezogener Daten findest du in unserer
-        <a href="privacy.html">Datenschutzerklärung</a>.
-      </p>
+    <section class="spotlight section" id="widgets" aria-labelledby="widget-title">
+      <div class="wrap spotlight-grid">
+        <figure class="widget-image"><img src="assets/de-07.webp" width="782" height="1263" alt="Android-Homescreen mit kompakten und großen TasmoTastic-Widgets" loading="lazy"></figure>
+        <div>
+          <h2 id="widget-title">Deine Geräte auf dem Homescreen.</h2>
+          <p class="section-intro">Schalte Geräte und Gruppen direkt über Android-Widgets. Wähle zwischen einem kompakten und einem größeren Widget mit zusätzlichen Statusinfos.</p>
+          <dl class="feature-list"><div><dt>Konfiguration mitnehmen</dt><dd>Geräte, Gruppen und Einstellungen als Datei exportieren und später wieder importieren.</dd></div>
+<div><dt>Verbindungen prüfen</dt><dd>Wähle Geräte aus und exportiere bei Bedarf ein Diagnoseprotokoll.</dd></div></dl>
+        </div>
+      </div>
     </section>
-
-    <section>
-      <h2>Kontakt</h2>
-      <p>
-        Bei Fragen, Feedback oder Problemen erreichst du den Entwickler unter:
-        <a href="mailto:unbox.digital.printing@gmail.com">unbox.digital.printing@gmail.com</a>
-      </p>
+    <section class="wrap section" aria-labelledby="download-title">
+      <div class="cta">
+        <div><h2 id="download-title">Bereit für dein Tasmota-Netz?</h2><p>Sieben Tage alle Funktionen ausprobieren. Danach kannst du ein Gerät weiter kostenlos steuern. Pro schaltest du per Einmalkauf frei.</p></div>
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.unbox_digital_print.tasmotastic&amp;hl=de">Bei Google Play</a>
+      </div>
     </section>
   </main>
-
   <footer>
-    © 2026 TasmoTastic · Entwickelt von Un!Box - Digital & Print
+    <div class="wrap footer-inner">
+      <p>© 2026 Un!Box – Digital &amp; Print</p>
+      <div class="footer-links"><a href="privacy.html">Datenschutz</a><a href="mailto:unbox.digital.printing@gmail.com">Kontakt</a></div>
+    </div>
   </footer>
 </body>
 </html>
